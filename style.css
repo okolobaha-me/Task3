@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.content-wrapper{
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content{
+    width: 50%;
+    background-color: blue;
+}
+
+.left-column, .right-column{
+    width: 25%;
+}
+
+.left-column{
+    background-color: tomato;
+    order: -1; /* левая колонка всегда первая во флекс контейнере */
+}
+
+.main-content, .left-column, .right-column{
+    padding: 30px 10px;
+}
+
+.right-column{
+    background-color: teal;
+    order: 2; /* правая колонка всегда последняя во флекс контейнере */
+}
+
+.column-name{
+    writing-mode: vertical-rl;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+}
